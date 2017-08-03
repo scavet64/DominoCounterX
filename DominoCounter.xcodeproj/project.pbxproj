@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C43FD841F0B4AFC00A04EBD /* DominoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C43FD831F0B4AFC00A04EBD /* DominoViewCell.swift */; };
+		6C43FD861F0B4DD600A04EBD /* TrackYourselfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C43FD851F0B4DD600A04EBD /* TrackYourselfViewController.swift */; };
+		6C43FD881F0C3B3A00A04EBD /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C43FD871F0C3B3A00A04EBD /* Stack.swift */; };
 		6CA1B1B11F09BFAF0049A34D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1B1B01F09BFAF0049A34D /* AppDelegate.swift */; };
 		6CA1B1B31F09BFAF0049A34D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1B1B21F09BFAF0049A34D /* ViewController.swift */; };
 		6CA1B1B61F09BFAF0049A34D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA1B1B41F09BFAF0049A34D /* Main.storyboard */; };
@@ -14,6 +17,7 @@
 		6CA1B1BB1F09BFAF0049A34D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA1B1B91F09BFAF0049A34D /* LaunchScreen.storyboard */; };
 		6CA1B1C61F09BFAF0049A34D /* DominoCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1B1C51F09BFAF0049A34D /* DominoCounterTests.swift */; };
 		6CA1B1D11F09BFAF0049A34D /* DominoCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1B1D01F09BFAF0049A34D /* DominoCounterUITests.swift */; };
+		6CA1B1DF1F09C2170049A34D /* pic01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CA1B1DE1F09C2170049A34D /* pic01.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C43FD831F0B4AFC00A04EBD /* DominoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DominoViewCell.swift; sourceTree = "<group>"; };
+		6C43FD851F0B4DD600A04EBD /* TrackYourselfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackYourselfViewController.swift; sourceTree = "<group>"; };
+		6C43FD871F0C3B3A00A04EBD /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		6CA1B1AD1F09BFAF0049A34D /* DominoCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DominoCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CA1B1B01F09BFAF0049A34D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CA1B1B21F09BFAF0049A34D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,7 @@
 		6CA1B1CC1F09BFAF0049A34D /* DominoCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DominoCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CA1B1D01F09BFAF0049A34D /* DominoCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominoCounterUITests.swift; sourceTree = "<group>"; };
 		6CA1B1D21F09BFAF0049A34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CA1B1DE1F09C2170049A34D /* pic01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pic01.jpg; path = ../pic01.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C43FD811F0B4A9E00A04EBD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C43FD831F0B4AFC00A04EBD /* DominoViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6C43FD821F0B4AA700A04EBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C43FD871F0C3B3A00A04EBD /* Stack.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		6CA1B1A41F09BFAF0049A34D = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +121,16 @@
 		6CA1B1AF1F09BFAF0049A34D /* DominoCounter */ = {
 			isa = PBXGroup;
 			children = (
+				6C43FD821F0B4AA700A04EBD /* Model */,
+				6C43FD811F0B4A9E00A04EBD /* View */,
+				6CA1B1DE1F09C2170049A34D /* pic01.jpg */,
 				6CA1B1B01F09BFAF0049A34D /* AppDelegate.swift */,
 				6CA1B1B21F09BFAF0049A34D /* ViewController.swift */,
 				6CA1B1B41F09BFAF0049A34D /* Main.storyboard */,
 				6CA1B1B71F09BFAF0049A34D /* Assets.xcassets */,
 				6CA1B1B91F09BFAF0049A34D /* LaunchScreen.storyboard */,
 				6CA1B1BC1F09BFAF0049A34D /* Info.plist */,
+				6C43FD851F0B4DD600A04EBD /* TrackYourselfViewController.swift */,
 			);
 			path = DominoCounter;
 			sourceTree = "<group>";
@@ -236,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CA1B1BB1F09BFAF0049A34D /* LaunchScreen.storyboard in Resources */,
+				6CA1B1DF1F09C2170049A34D /* pic01.jpg in Resources */,
 				6CA1B1B81F09BFAF0049A34D /* Assets.xcassets in Resources */,
 				6CA1B1B61F09BFAF0049A34D /* Main.storyboard in Resources */,
 			);
@@ -262,8 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C43FD841F0B4AFC00A04EBD /* DominoViewCell.swift in Sources */,
+				6C43FD881F0C3B3A00A04EBD /* Stack.swift in Sources */,
 				6CA1B1B31F09BFAF0049A34D /* ViewController.swift in Sources */,
 				6CA1B1B11F09BFAF0049A34D /* AppDelegate.swift in Sources */,
+				6C43FD861F0B4DD600A04EBD /* TrackYourselfViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +548,7 @@
 				6CA1B1D71F09BFAF0049A34D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CA1B1D81F09BFAF0049A34D /* Build configuration list for PBXNativeTarget "DominoCounterTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +557,7 @@
 				6CA1B1DA1F09BFAF0049A34D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CA1B1DB1F09BFAF0049A34D /* Build configuration list for PBXNativeTarget "DominoCounterUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +566,7 @@
 				6CA1B1DD1F09BFAF0049A34D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
