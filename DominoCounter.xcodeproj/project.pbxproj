@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C0FC4991F36A4E40016CF64 /* Undo-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C0FC4981F36A4E40016CF64 /* Undo-button.png */; };
 		6C43FD841F0B4AFC00A04EBD /* DominoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C43FD831F0B4AFC00A04EBD /* DominoViewCell.swift */; };
 		6C43FD861F0B4DD600A04EBD /* TrackYourselfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C43FD851F0B4DD600A04EBD /* TrackYourselfViewController.swift */; };
 		6C43FD881F0C3B3A00A04EBD /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C43FD871F0C3B3A00A04EBD /* Stack.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C0FC4981F36A4E40016CF64 /* Undo-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Undo-button.png"; sourceTree = "<group>"; };
 		6C43FD831F0B4AFC00A04EBD /* DominoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DominoViewCell.swift; sourceTree = "<group>"; };
 		6C43FD851F0B4DD600A04EBD /* TrackYourselfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackYourselfViewController.swift; sourceTree = "<group>"; };
 		6C43FD871F0C3B3A00A04EBD /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				6C43FD821F0B4AA700A04EBD /* Model */,
 				6C43FD811F0B4A9E00A04EBD /* View */,
 				6CA1B1DE1F09C2170049A34D /* pic01.jpg */,
+				6C0FC4981F36A4E40016CF64 /* Undo-button.png */,
 				6CA1B1B01F09BFAF0049A34D /* AppDelegate.swift */,
 				6CA1B1B21F09BFAF0049A34D /* ViewController.swift */,
 				6CA1B1B41F09BFAF0049A34D /* Main.storyboard */,
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CA1B1BB1F09BFAF0049A34D /* LaunchScreen.storyboard in Resources */,
+				6C0FC4991F36A4E40016CF64 /* Undo-button.png in Resources */,
 				6CA1B1DF1F09C2170049A34D /* pic01.jpg in Resources */,
 				6CA1B1B81F09BFAF0049A34D /* Assets.xcassets in Resources */,
 				6CA1B1B61F09BFAF0049A34D /* Main.storyboard in Resources */,

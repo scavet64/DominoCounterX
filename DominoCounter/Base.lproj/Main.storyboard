@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -71,12 +72,13 @@
                                         <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </label>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlX-d8-wb9">
-                                        <rect key="frame" x="277" y="25" width="75" height="75"/>
+                                        <rect key="frame" x="302" y="40" width="50" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="75" id="E8y-aR-Y5y"/>
-                                            <constraint firstAttribute="width" constant="75" id="kyR-sy-xUx"/>
+                                            <constraint firstAttribute="width" constant="50" id="eBT-Z9-Hcv"/>
+                                            <constraint firstAttribute="height" constant="50" id="eOK-sf-nyo"/>
+                                            <constraint firstAttribute="width" secondItem="LlX-d8-wb9" secondAttribute="height" multiplier="1:1" id="krB-Mg-sag"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="1"/>
+                                        <state key="normal" title="Button" image="Undo-button.png"/>
                                         <connections>
                                             <action selector="UndoButtonPress:" destination="Sxh-D4-ctC" eventType="touchUpInside" id="7B2-iU-y1E"/>
                                         </connections>
@@ -84,11 +86,12 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="LlX-d8-wb9" secondAttribute="trailing" constant="23" id="3bG-pm-0zz"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="125" id="FLL-4W-aq2"/>
+                                    <constraint firstItem="LlX-d8-wb9" firstAttribute="leading" secondItem="zwE-Ow-elG" secondAttribute="leading" constant="302" id="WuS-ic-tSr"/>
+                                    <constraint firstItem="LlX-d8-wb9" firstAttribute="top" secondItem="zwE-Ow-elG" secondAttribute="top" constant="40" id="XGS-Rb-7L6"/>
                                     <constraint firstAttribute="height" constant="125" id="buL-6V-Q6w"/>
-                                    <constraint firstItem="LlX-d8-wb9" firstAttribute="top" secondItem="zwE-Ow-elG" secondAttribute="top" constant="25" id="fH3-Ps-Q5V"/>
-                                    <constraint firstAttribute="bottom" secondItem="LlX-d8-wb9" secondAttribute="bottom" constant="25" id="hu7-Ht-GfD"/>
-                                    <constraint firstAttribute="trailing" secondItem="LlX-d8-wb9" secondAttribute="trailing" constant="23" id="is0-l1-Vz6"/>
+                                    <constraint firstAttribute="bottom" secondItem="LlX-d8-wb9" secondAttribute="bottom" constant="35" id="mcx-9G-QbL"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EqG-KS-LlB">
@@ -106,7 +109,7 @@
                                                             <constraint firstAttribute="width" constant="75" id="2Oi-iQ-GeS"/>
                                                             <constraint firstAttribute="height" constant="75" id="GhZ-vo-mCH"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="1"/>
+                                                        <state key="normal" title="Button" image="dom1"/>
                                                         <connections>
                                                             <action selector="AddButton:" destination="Sxh-D4-ctC" eventType="touchUpInside" id="g1f-sL-zst"/>
                                                         </connections>
@@ -117,7 +120,7 @@
                                                             <constraint firstAttribute="width" constant="75" id="qmW-3w-WP0"/>
                                                             <constraint firstAttribute="height" constant="75" id="tkQ-ED-yCO"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="1"/>
+                                                        <state key="normal" title="Button" image="dom2"/>
                                                         <connections>
                                                             <action selector="AddButton:" destination="Sxh-D4-ctC" eventType="touchUpInside" id="rKD-Zg-WLm"/>
                                                         </connections>
@@ -128,7 +131,7 @@
                                                             <constraint firstAttribute="height" constant="75" id="Xaj-FQ-DoW"/>
                                                             <constraint firstAttribute="width" constant="75" id="cR7-TG-whu"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="1"/>
+                                                        <state key="normal" title="Button" image="dom3"/>
                                                         <connections>
                                                             <action selector="AddButton:" destination="Sxh-D4-ctC" eventType="touchUpInside" id="J4c-Dx-q9D"/>
                                                         </connections>
@@ -139,7 +142,7 @@
                                                             <constraint firstAttribute="height" constant="75" id="igf-uJ-WWG"/>
                                                             <constraint firstAttribute="width" constant="75" id="xim-XB-Dds"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="1"/>
+                                                        <state key="normal" title="Button" image="dom4"/>
                                                         <connections>
                                                             <action selector="AddButton:" destination="Sxh-D4-ctC" eventType="touchUpInside" id="zYu-Rs-jHv"/>
                                                         </connections>
@@ -155,7 +158,10 @@
                                                             <constraint firstAttribute="width" constant="75" id="iIB-2r-Oi0"/>
                                                             <constraint firstAttribute="height" constant="75" id="t1E-jX-8Cv"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="1"/>
+                                                        <state key="normal" title="Button" image="dom5"/>
+                                                        <connections>
+                                                            <action selector="AddButton:" destination="Sxh-D4-ctC" eventType="touchUpInside" id="GuD-4p-QDc"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6G-af-EfQ">
                                                         <rect key="frame" x="86" y="0.0" width="75" height="75"/>
@@ -163,7 +169,10 @@
                                                             <constraint firstAttribute="height" constant="75" id="EtF-tK-saj"/>
                                                             <constraint firstAttribute="width" constant="75" id="av2-hb-1Xv"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="1"/>
+                                                        <state key="normal" title="Button" image="dom6"/>
+                                                        <connections>
+                                                            <action selector="AddButton:" destination="Sxh-D4-ctC" eventType="touchUpInside" id="H0R-gb-YkP"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPu-WJ-bXz">
                                                         <rect key="frame" x="172" y="0.0" width="75" height="75"/>
@@ -171,7 +180,10 @@
                                                             <constraint firstAttribute="width" constant="75" id="KDD-eg-aKF"/>
                                                             <constraint firstAttribute="height" constant="75" id="huL-V5-rKJ"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="1"/>
+                                                        <state key="normal" title="Button" image="dom7"/>
+                                                        <connections>
+                                                            <action selector="AddButton:" destination="Sxh-D4-ctC" eventType="touchUpInside" id="p8Z-FX-WBx"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZ6-97-43F">
                                                         <rect key="frame" x="258" y="0.0" width="75" height="75"/>
@@ -179,7 +191,10 @@
                                                             <constraint firstAttribute="width" constant="75" id="Vvv-Qs-aO0"/>
                                                             <constraint firstAttribute="height" constant="75" id="wM7-1u-1qa"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="1"/>
+                                                        <state key="normal" title="Button" image="dom8"/>
+                                                        <connections>
+                                                            <action selector="AddButton:" destination="Sxh-D4-ctC" eventType="touchUpInside" id="QSp-6k-ud3"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -192,7 +207,10 @@
                                                             <constraint firstAttribute="height" constant="75" id="ZgC-xf-D5X"/>
                                                             <constraint firstAttribute="width" constant="75" id="gOd-em-sPL"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="1"/>
+                                                        <state key="normal" title="Button" image="dom9"/>
+                                                        <connections>
+                                                            <action selector="AddButton:" destination="Sxh-D4-ctC" eventType="touchUpInside" id="Awt-zF-ugx"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09b-1Z-yRp">
                                                         <rect key="frame" x="86" y="0.0" width="75" height="75"/>
@@ -200,7 +218,10 @@
                                                             <constraint firstAttribute="width" constant="75" id="4Y2-Su-6CA"/>
                                                             <constraint firstAttribute="height" constant="75" id="g4b-nW-yYE"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="1"/>
+                                                        <state key="normal" title="Button" image="dom10"/>
+                                                        <connections>
+                                                            <action selector="AddButton:" destination="Sxh-D4-ctC" eventType="touchUpInside" id="SYQ-ah-zD8"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2S1-q3-FmV">
                                                         <rect key="frame" x="172" y="0.0" width="75" height="75"/>
@@ -208,7 +229,10 @@
                                                             <constraint firstAttribute="height" constant="75" id="0QI-D5-plE"/>
                                                             <constraint firstAttribute="width" constant="75" id="hOS-PI-chD"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="1"/>
+                                                        <state key="normal" title="Button" image="dom11"/>
+                                                        <connections>
+                                                            <action selector="AddButton:" destination="Sxh-D4-ctC" eventType="touchUpInside" id="EZK-ZQ-8Ov"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R03-hl-Ijf">
                                                         <rect key="frame" x="258" y="0.0" width="75" height="75"/>
@@ -216,7 +240,10 @@
                                                             <constraint firstAttribute="height" constant="75" id="A76-Nd-Bbw"/>
                                                             <constraint firstAttribute="width" constant="75" id="qdu-tw-PpH"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="1"/>
+                                                        <state key="normal" title="Button" image="dom12"/>
+                                                        <connections>
+                                                            <action selector="AddButton:" destination="Sxh-D4-ctC" eventType="touchUpInside" id="hZR-Iz-GQ3"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -230,6 +257,9 @@
                                                             <constraint firstAttribute="height" constant="75" id="e4X-aG-Vj1"/>
                                                         </constraints>
                                                         <state key="normal" title="Button" image="1"/>
+                                                        <connections>
+                                                            <action selector="AddButton:" destination="Sxh-D4-ctC" eventType="touchUpInside" id="Jul-uF-w2F"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9d-xr-h4s">
                                                         <rect key="frame" x="86" y="0.0" width="75" height="75"/>
@@ -238,6 +268,9 @@
                                                             <constraint firstAttribute="height" constant="75" id="acf-gM-9xt"/>
                                                         </constraints>
                                                         <state key="normal" title="Button" image="1"/>
+                                                        <connections>
+                                                            <action selector="AddButton:" destination="Sxh-D4-ctC" eventType="touchUpInside" id="MU4-QJ-kCp"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vnl-K9-tuS">
                                                         <rect key="frame" x="172" y="0.0" width="75" height="75"/>
@@ -246,6 +279,9 @@
                                                             <constraint firstAttribute="height" constant="75" id="h93-4v-rmb"/>
                                                         </constraints>
                                                         <state key="normal" title="Button" image="1"/>
+                                                        <connections>
+                                                            <action selector="AddButton:" destination="Sxh-D4-ctC" eventType="touchUpInside" id="VmY-nP-pJJ"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sv0-lt-5rO">
                                                         <rect key="frame" x="258" y="0.0" width="75" height="75"/>
@@ -254,6 +290,9 @@
                                                             <constraint firstAttribute="height" constant="75" id="v7V-tx-zAE"/>
                                                         </constraints>
                                                         <state key="normal" title="Button" image="1"/>
+                                                        <connections>
+                                                            <action selector="AddButton:" destination="Sxh-D4-ctC" eventType="touchUpInside" id="LDt-1e-FLe"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -326,5 +365,18 @@
     </scenes>
     <resources>
         <image name="1" width="276" height="276"/>
+        <image name="Undo-button.png" width="512" height="512"/>
+        <image name="dom1" width="248" height="247"/>
+        <image name="dom10" width="248" height="247"/>
+        <image name="dom11" width="248" height="247"/>
+        <image name="dom12" width="248" height="247"/>
+        <image name="dom2" width="248" height="247"/>
+        <image name="dom3" width="248" height="247"/>
+        <image name="dom4" width="248" height="247"/>
+        <image name="dom5" width="248" height="247"/>
+        <image name="dom6" width="248" height="247"/>
+        <image name="dom7" width="248" height="247"/>
+        <image name="dom8" width="248" height="247"/>
+        <image name="dom9" width="248" height="247"/>
     </resources>
 </document>
